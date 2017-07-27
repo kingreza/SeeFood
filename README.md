@@ -2,6 +2,7 @@
 ![demo](seefood1.gif).      
 [Video Demo](https://www.youtube.com/watch?v=cFwUl0DjpHA)
 
+Follw me on [Twitter](https://twitter.com/kingreza)
 ## Prerequisites:  
 Xcode 9 (currently Version 9.0 beta 3 (9M174d)).   
 The trained CoreML data model which can be downloaded [here](https://d3rwn5lppri82t.cloudfront.net/food.mlmodel).     
