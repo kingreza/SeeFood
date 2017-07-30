@@ -34,9 +34,9 @@ class FrameExtractor: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
   public func flipCamera() {
     sessionQueue.async { [unowned self] in
       self.captureSession.beginConfiguration()
-      guard let currentCaptureInput = self.captureSession.inputs.first as? AVCaptureInput else { return }
+      guard let currentCaptureInput = self.captureSession.inputs.first else { return }
       self.captureSession.removeInput(currentCaptureInput)
-      guard let currentCaptureOutput = self.captureSession.outputs.first as? AVCaptureOutput else { return }
+      guard let currentCaptureOutput = self.captureSession.outputs.first else { return }
       self.captureSession.removeOutput(currentCaptureOutput)
       self.position = self.position == .front ? .back : .front
       self.configureSession()
@@ -83,10 +83,7 @@ class FrameExtractor: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
   }
   
   private func selectCaptureDevice() -> AVCaptureDevice? {
-    return AVCaptureDevice.devices().filter {
-      ($0 as AnyObject).hasMediaType(AVMediaType.video) &&
-        ($0 as AnyObject).position == position
-      }.first as? AVCaptureDevice
+    return AVCaptureDevice.default(.builtInWideAngleCamera, for: AVMediaType.video, position: .back)
   }
   
   // MARK: Sample buffer to UIImage conversion

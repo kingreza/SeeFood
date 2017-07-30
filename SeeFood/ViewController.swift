@@ -11,7 +11,7 @@ import CoreML
 import Vision
 import AVFoundation
 
-class ViewController: UIViewController, AVCapturePhotoCaptureDelegate, FrameExtractorDelegate {
+class ViewController: UIViewController, FrameExtractorDelegate {
  
   var frameExtractor: FrameExtractor!
   
@@ -28,7 +28,6 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate, FrameExtr
     }
   }
   
-  @IBOutlet weak var cameraLayer: UIView!
   override func viewDidLoad() {
     super.viewDidLoad()
     frameExtractor = FrameExtractor()
