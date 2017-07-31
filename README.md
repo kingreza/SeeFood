@@ -1,4 +1,6 @@
 # SeeFood
+For a step by step guide on how to build SeeFood: **[How to train your own model for CoreML](http://reza.codes/2017-07-29/how-to-train-your-own-dataset-for-coreml/)**. 
+
 ![demo](seefood1.gif).      
 [Video Demo](https://www.youtube.com/watch?v=cFwUl0DjpHA)
 
