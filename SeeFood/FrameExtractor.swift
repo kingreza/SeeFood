@@ -83,7 +83,7 @@ class FrameExtractor: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
   }
   
   private func selectCaptureDevice() -> AVCaptureDevice? {
-    return AVCaptureDevice.default(.builtInWideAngleCamera, for: AVMediaType.video, position: .back)
+    return AVCaptureDevice.default(for: .video)
   }
   
   // MARK: Sample buffer to UIImage conversion
