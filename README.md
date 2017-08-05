@@ -7,7 +7,7 @@ For a step by step guide on how to build SeeFood: **[How to train your own model
 Follw me on [Twitter](https://twitter.com/kingreza)
 ## Prerequisites:  
 Xcode 9 (currently Version 9.0 beta 3 (9M174d)).   
-The trained CoreML data model which can be downloaded [here](https://d3rwn5lppri82t.cloudfront.net/food.mlmodel).     
+The trained CoreML data model which can be downloaded [here](https://d3rwn5lppri82t.cloudfront.net/coreml/food.mlmodel).     
 An iOS device running iOS 11+.  
 
 ## Setup:
